@@ -1,0 +1,12 @@
+{
+  "name": "notan_opacity_problem",
+  "version": "0.1.0",
+  "files": [
+    "notan_opacity_problem_lib_bg.wasm",
+    "notan_opacity_problem_lib.js",
+    "notan_opacity_problem_lib.d.ts"
+  ],
+  "module": "notan_opacity_problem_lib.js",
+  "types": "notan_opacity_problem_lib.d.ts",
+  "sideEffects": false
+}
