@@ -1,0 +1,21 @@
+[package]
+name = "notan_opacity_problem"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "notan_opacity_problem_lib"
+crate-type = [ "cdylib", "rlib" ]
+path = "src/notan_opacity_problem_lib.rs"
+
+[[bin]]
+name = "notan_opacity_problem"
+path = "src/notan_opacity_problem_entry.rs"
+
+[dependencies]
+notan = { version = "0.5", default-features = false, features = [
+    "backend",
+    "draw",
+    "log",
+] }
+wasm-bindgen = "~0.2"

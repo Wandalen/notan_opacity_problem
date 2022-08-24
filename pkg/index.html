@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Notan App</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="minimal-ui, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+</head>
+<body>
+<style>
+  body
+  {
+    background: linear-gradient(#b5e48c, #457b9d);
+    height : 100%;
+    width : 100%;
+  }
+  div#examples
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+<script type="module">
+    import init, * as wam from './notan_opacity_problem_lib.js';
+    let module = await init();
+    wam.main();
+</script>
+
+<div id="examples">
+    <canvas id="app"></canvas>
+</div>
+</body>
